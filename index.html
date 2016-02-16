@@ -1,0 +1,62 @@
+<!-DOCTYPE HTML-->
+<html>
+<head>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" type="text/css"/>
+<link rel="stylesheet" href="css/jquery.mobile.theme-1.4.5.min.css" type="text/css"  />
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" type="text/css" />
+<script type="text/javascript" src="phonegap.js"></script>
+<script type="text/javascript" src="js/jquery-2.2.0.min.js" ></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js" ></script>
+
+<script type="text/javascript">
+var destinationType;
+
+$("document").ready(function inicio(){
+
+$("#btnCamara").tap(function pulsacion(){;
+    alert("Ejecucion corecta");
+navigator.camara.getPincture(Satisfactorio, Error, {quality:50, allowEdit:true, destinationType:destinationType.DATA_URL });
+});
+
+});
+</script>
+<style type="text/css">
+#encabezado{
+text-align:center;
+font-size:19px;
+color:orange;
+font-weight:bold;
+}
+#pie{
+text-align:center;
+font-size:25px;
+color:red;
+font-style:italic;
+}
+
+</style>
+</head>
+<body>
+<div data-role="page" id="principal">
+	<div data-role="header">
+		<h1>Mi aplicación</h1>
+	</div>
+	<div data-role="content">
+		<p id="encabezado">Transiciones</p>
+                <input type="button" value="Acceder a Camara" id="btnCamara"/>
+       
+               
+                
+       
+	
+         </div>
+              <script type="text/javascript" src="/wp-content/uploads/tutorial-data/cordova.js"></script>
+              <script type="text/javascript" src="/wp-content/uploads/tutorial-data/js/index.js"></script>
+              <script type="text/javascript">app.initialize();</script>
+              
+              
+</div>
+    
+
+</body>
+</html>
